@@ -36,7 +36,7 @@ export default function Home() {
     {
       name: "Habitat",
       description: "High-octane events where founders go from idea to prototype in 5 hours.",
-      link: "https://joinhabitat.eu",
+      link: "https://www.joinhabitat.eu/",
       tag: "Founder"
     }
   ];
