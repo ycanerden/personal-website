@@ -11,7 +11,7 @@ export default function Home() {
       link: "https://rapider.ai"
     },
     {
-      company: "Goho",
+      company: "Gobo",
       role: "Co-Founder",
       period: "2021 — 2023",
       description: "Built an environmental intelligence startup using AI to optimize indoor air quality. Led GTM, sustainability standards, and international partnerships.",
@@ -116,10 +116,10 @@ export default function Home() {
         <Link href="https://github.com/ycanerden" target="_blank" className="text-muted hover:text-black transition-colors">
           <Github size={20} />
         </Link>
-        <Link href="https://linkedin.com/in/canerden" target="_blank" className="text-muted hover:text-black transition-colors">
+        <Link href="https://www.linkedin.com/in/can-erden/" target="_blank" className="text-muted hover:text-black transition-colors">
           <Linkedin size={20} />
         </Link>
-        <Link href="mailto:can@joinhabitat.eu" className="text-muted hover:text-black transition-colors">
+        <Link href="mailto:ycanerden@gmail.com" className="text-muted hover:text-black transition-colors">
           <Mail size={20} />
         </Link>
       </section>
