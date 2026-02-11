@@ -6,15 +6,15 @@ export default function Home() {
     {
       company: "Rapider AI",
       role: "Head of Growth & Strategy",
-      period: "2024 — Present",
-      description: "Leading growth for an AI enterprise SaaS startup. Scaled revenue by 3.4x YoY through international GTM strategies and operational restructuring.",
+      period: "2024 — 2026",
+      description: "Led growth for an AI enterprise SaaS startup. Scaled revenue by 3.4x YoY through international GTM strategies and operational restructuring. Reduced operating costs by 56%.",
       link: "https://rapider.ai"
     },
     {
       company: "Gobo",
       role: "Co-Founder",
-      period: "2021 — 2023",
-      description: "Built an environmental intelligence startup using AI to optimize indoor air quality. Led GTM, sustainability standards, and international partnerships.",
+      period: "2024 — 2025",
+      description: "Built an environmental intelligence startup using AI to optimize indoor air quality. Led GTM around WELL and LEED standards, and partnership discussions with SATO.",
       link: "#"
     },
     {
@@ -28,15 +28,15 @@ export default function Home() {
 
   const currentBets = [
     {
+      name: "Habitat",
+      description: "Community-hackathons helping entrepreneurs launch startups through structured evening sessions. Organized events across 3 cities helping 100+ people launch MVPs.",
+      link: "https://www.joinhabitat.eu/",
+      tag: "Co-Founder"
+    },
+    {
       name: "Habitat Skills",
       description: "The AI-native Operating System for founders. Turning agents into strategic partners.",
       link: "https://skills.joinhabitat.eu",
-      tag: "Founder"
-    },
-    {
-      name: "Habitat",
-      description: "High-octane events where founders go from idea to prototype in 5 hours.",
-      link: "https://www.joinhabitat.eu/",
       tag: "Founder"
     }
   ];
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       <footer className="mt-32 text-[10px] text-neutral-300 uppercase tracking-widest font-bold">
-        © 2026 Can Erden
+        © 2025 Can Erden
       </footer>
     </main>
   );
