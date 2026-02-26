@@ -1,5 +1,11 @@
-import { Github, Twitter, Linkedin, ArrowUpRight, Mail } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
 import Link from 'next/link';
+import { getAllPostMetas, formatDate } from '@/lib/posts';
+import { PixelBetsIcon } from '@/components/icons/PixelBetsIcon';
+import { PixelExperienceIcon } from '@/components/icons/PixelExperienceIcon';
+import { PixelPhilosophyIcon } from '@/components/icons/PixelPhilosophyIcon';
+import { PixelBlogIcon } from '@/components/icons/PixelBlogIcon';
+import { PixelArrowIcon } from '@/components/icons/PixelArrowIcon';
 
 export default function Home() {
   const experiences = [
@@ -41,6 +47,8 @@ export default function Home() {
     }
   ];
 
+  const recentPosts = getAllPostMetas().slice(0, 3);
+
   return (
     <main className="max-w-2xl mx-auto px-6 pt-24 pb-32">
       {/* Header */}
@@ -48,17 +56,20 @@ export default function Home() {
         <h1 className="text-2xl font-bold mb-4 tracking-tight">Can Erden</h1>
         <div className="text-muted leading-relaxed space-y-4">
           <p>
-            Growth and strategy operator. Currently pursuing a Master's in Innovation & Entrepreneurship at <span className="text-black">Vlerick Business School</span>.
+            Growth and strategy operator. Currently pursuing a Master&apos;s in Innovation &amp; Entrepreneurship at <span className="text-black">Vlerick Business School</span>.
           </p>
           <p>
-            I specialize in AI-native execution, M&A strategy, and scaling early-stage ventures. Based in Leuven, Belgium.
+            I specialize in AI-native execution, M&amp;A strategy, and scaling early-stage ventures. Based in Leuven, Belgium.
           </p>
         </div>
       </section>
 
       {/* Building Now */}
       <section className="mb-20">
-        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-muted mb-8">Current Bets</h2>
+        <h2 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-muted mb-8">
+          <PixelBetsIcon size={12} />
+          Current Bets
+        </h2>
         <div className="space-y-10">
           {currentBets.map((project) => (
             <div key={project.name} className="group">
@@ -70,7 +81,7 @@ export default function Home() {
                   </div>
                   <p className="text-sm text-muted leading-relaxed max-w-md">{project.description}</p>
                 </div>
-                <ArrowUpRight size={18} className="text-neutral-300 group-hover:text-black transition-colors" />
+                <PixelArrowIcon size={16} className="text-neutral-300 group-hover:text-black transition-colors mt-0.5" />
               </Link>
             </div>
           ))}
@@ -79,7 +90,10 @@ export default function Home() {
 
       {/* Experience */}
       <section className="mb-20">
-        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-muted mb-8">Previous</h2>
+        <h2 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-muted mb-8">
+          <PixelExperienceIcon size={12} />
+          Previous
+        </h2>
         <div className="space-y-10">
           {experiences.map((exp) => (
             <div key={exp.company} className="group">
@@ -96,17 +110,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Education / Philosophy */}
+      {/* Philosophy */}
       <section className="mb-20">
-        <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-muted mb-8">Philosophy</h2>
-        <div className="prose prose-sm text-muted leading-relaxed">
+        <h2 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-muted mb-8">
+          <PixelPhilosophyIcon size={12} />
+          Philosophy
+        </h2>
+        <div className="text-sm text-muted leading-relaxed">
           <p>
-            I believe the barrier between idea and execution is collapsing. 
-            My work focuses on the "Founder as Director" model—leveraging agentic AI 
+            I believe the barrier between idea and execution is collapsing.
+            My work focuses on the &ldquo;Founder as Director&rdquo; model—leveraging agentic AI
             to scale human strategy and automate the repetitive to focus on the unique.
           </p>
         </div>
       </section>
+
+      {/* Writing */}
+      {recentPosts.length > 0 && (
+        <section className="mb-20">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-muted">
+              <PixelBlogIcon size={12} />
+              Writing
+            </h2>
+            <Link
+              href="/blog"
+              className="text-xs text-muted hover:text-black transition-colors"
+            >
+              All posts →
+            </Link>
+          </div>
+          <div className="space-y-6">
+            {recentPosts.map((post) => (
+              <div key={post.slug}>
+                <Link href={`/blog/${post.slug}`} className="group block">
+                  <div className="flex items-baseline justify-between gap-4 mb-1">
+                    <h3 className="text-sm font-bold group-hover:underline underline-offset-4">
+                      {post.title}
+                    </h3>
+                    <span className="text-xs text-neutral-300 font-mono shrink-0">
+                      {formatDate(post.date)}
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted leading-relaxed">{post.excerpt}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Socials */}
       <section className="pt-8 border-t border-neutral-100 flex items-center space-x-6">
@@ -125,7 +177,7 @@ export default function Home() {
       </section>
 
       <footer className="mt-32 text-[10px] text-neutral-300 uppercase tracking-widest font-bold">
-        © 2025 Can Erden
+        © 2026 Can Erden
       </footer>
     </main>
   );
