@@ -11,15 +11,9 @@ export default function BlogPage() {
   const posts = getAllPostMetas();
 
   return (
-    <main className="max-w-2xl mx-auto px-6 pt-24 pb-32">
+    <main className="max-w-2xl mx-auto px-6 pt-16 pb-32">
       <div className="mb-16">
-        <Link
-          href="/"
-          className="text-xs text-muted hover:text-black transition-colors"
-        >
-          ← Can Erden
-        </Link>
-        <div className="flex items-center gap-2.5 mt-8 mb-2">
+        <div className="flex items-center gap-2.5 mt-2 mb-2">
           <PixelBlogIcon size={18} className="text-black" />
           <h1 className="text-2xl font-bold tracking-tight">Writing</h1>
         </div>

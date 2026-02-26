@@ -32,15 +32,9 @@ export default async function PostPage({
   if (!post) notFound();
 
   return (
-    <main className="max-w-2xl mx-auto px-6 pt-24 pb-32">
+    <main className="max-w-2xl mx-auto px-6 pt-16 pb-32">
       <div className="mb-12">
-        <Link
-          href="/blog"
-          className="text-xs text-muted hover:text-black transition-colors"
-        >
-          ← Writing
-        </Link>
-        <h1 className="text-2xl font-bold mt-8 mb-3 tracking-tight leading-snug">
+        <h1 className="text-2xl font-bold mt-2 mb-3 tracking-tight leading-snug">
           {post.title}
         </h1>
         <p className="text-xs text-neutral-300 font-mono">{formatDate(post.date)}</p>
