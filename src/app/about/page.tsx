@@ -5,7 +5,7 @@ import { PixelExperienceIcon } from '@/components/icons/PixelExperienceIcon';
 import { PixelArrowIcon } from '@/components/icons/PixelArrowIcon';
 
 export const metadata = {
-  title: 'About — Can Erden',
+  title: 'About - Can Erden',
   description:
     'Founder of Habitat Skills and co-founder of Habitat. Background, current projects, and experience as a growth and strategy operator for AI-native founders.',
 };
@@ -31,7 +31,7 @@ const experiences = [
   {
     company: 'Rapider AI',
     role: 'Head of Growth & Strategy',
-    period: '2024 — 2026',
+    period: '2024-2026',
     description:
       'Led growth for an AI enterprise SaaS startup. Scaled revenue by 3.4x YoY through international GTM strategies and operational restructuring. Reduced operating costs by 56%.',
     link: 'https://rapider.ai',
@@ -39,7 +39,7 @@ const experiences = [
   {
     company: 'Gobo',
     role: 'Co-Founder',
-    period: '2024 — 2025',
+    period: '2024-2025',
     description:
       'Built an environmental intelligence startup using AI to optimize indoor air quality. Led GTM around WELL and LEED standards, and partnership discussions with SATO.',
     link: '#',
@@ -47,7 +47,7 @@ const experiences = [
   {
     company: 'Koç Holding (Koç Yaşa)',
     role: 'Business Development & Strategy',
-    period: '2023 — 2024',
+    period: '2023-2024',
     description:
       'Contributed to the largest MedTech acquisition in Turkey. Managed commercial due diligence and post-merger integration for an 8-figure transaction.',
     link: 'https://www.koc.com.tr',

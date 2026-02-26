@@ -27,21 +27,11 @@ export default function Home() {
         </h2>
         <div className="text-sm text-muted leading-relaxed space-y-3">
           <p>
-            I&apos;m building <span className="text-black">Habitat Skills</span>, an
-            AI-native operating system that helps founders work like directors
-            instead of solo executors.
+            Right now I&apos;m focused on <span className="text-black">Habitat</span>, our
+            community hackathons where founders ship MVPs together, and{' '}
+            <span className="text-black">Habitat Skills</span>, a complementary AI-native OS
+            that helps them keep that momentum between cohorts.
           </p>
-          <p>
-            It turns agents into strategic partners for thinking through markets,
-            drafting experiments, and shipping MVPs with far less overhead.
-          </p>
-          <Link
-            href="https://skills.joinhabitat.eu"
-            target="_blank"
-            className="inline-flex items-center text-xs font-bold uppercase tracking-[0.2em] text-muted hover:text-black transition-colors hover-link"
-          >
-            Learn more at Habitat Skills →
-          </Link>
         </div>
       </section>
 
@@ -54,9 +44,9 @@ export default function Home() {
         <div className="text-sm text-muted leading-relaxed">
           <p>
             I believe the barrier between idea and execution is collapsing.
-            My work focuses on the &ldquo;Founder as Director&rdquo; model—leveraging agentic
-            AI to scale human strategy and automate the repetitive so founders
-            can stay in high-leverage conversations and decisions.
+            My work focuses on the &ldquo;Founder as Director&rdquo; model, leveraging
+            agentic AI to scale human strategy and automate the repetitive so
+            founders can stay in high-leverage conversations and decisions.
           </p>
           <p className="mt-3">
             Habitat and Habitat Skills are my experiments in this model: tools
