@@ -27,10 +27,24 @@ export default function Home() {
         </h2>
         <div className="text-sm text-muted leading-relaxed space-y-3">
           <p>
-            Right now I&apos;m focused on <span className="text-black">Habitat</span>, our
-            community hackathons where founders ship MVPs together, and{' '}
-            <span className="text-black">Habitat Skills</span>, a complementary AI-native OS
-            that helps them keep that momentum between cohorts.
+            Right now I&apos;m focused on{' '}
+            <Link
+              href="https://www.joinhabitat.eu/"
+              target="_blank"
+              className="text-black underline underline-offset-4 hover:opacity-80 transition-opacity"
+            >
+              Habitat
+            </Link>
+            , our community hackathons where founders ship MVPs together, and{' '}
+            <Link
+              href="https://skills.joinhabitat.eu"
+              target="_blank"
+              className="text-black underline underline-offset-4 hover:opacity-80 transition-opacity"
+            >
+              Habitat Skills
+            </Link>
+            , a complementary AI-native OS that helps them keep that momentum between
+            cohorts.
           </p>
         </div>
       </section>
