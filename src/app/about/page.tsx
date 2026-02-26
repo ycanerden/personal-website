@@ -6,21 +6,22 @@ import { PixelArrowIcon } from '@/components/icons/PixelArrowIcon';
 
 export const metadata = {
   title: 'About — Can Erden',
-  description: 'Background, current projects, and experience.',
+  description:
+    'Founder of Habitat Skills and co-founder of Habitat. Background, current projects, and experience as a growth and strategy operator for AI-native founders.',
 };
 
 const currentBets = [
   {
     name: 'Habitat',
     description:
-      'Community-hackathons helping entrepreneurs launch startups through structured evening sessions. Organized events across 3 cities helping 100+ people launch MVPs.',
+      "Community-hackathons helping entrepreneurs launch startups through structured evening sessions. We run cohorts across multiple cities so founders don't have to build alone.",
     link: 'https://www.joinhabitat.eu/',
     tag: 'Co-Founder',
   },
   {
     name: 'Habitat Skills',
     description:
-      'The AI-native Operating System for founders. Turning agents into strategic partners.',
+      'The AI-native operating system for founders. It turns agents into strategic partners for thinking through markets, experiments, and MVPs.',
     link: 'https://skills.joinhabitat.eu',
     tag: 'Founder',
   },
@@ -61,12 +62,15 @@ export default function AboutPage() {
         <h1 className="text-2xl font-bold mb-4 tracking-tight">Can Erden</h1>
         <div className="text-muted leading-relaxed space-y-4 text-sm">
           <p>
-            Growth and strategy operator. Currently pursuing a Master&apos;s in Innovation &amp;
-            Entrepreneurship at <span className="text-black">Vlerick Business School</span>.
+            Growth and strategy operator working with AI-native founders. Currently pursuing
+            a Master&apos;s in Innovation &amp; Entrepreneurship at{' '}
+            <span className="text-black">Vlerick Business School</span>.
           </p>
           <p>
-            I specialize in AI-native execution, M&amp;A strategy, and scaling early-stage
-            ventures. Based in Leuven, Belgium.
+            I&apos;m the co-founder of <span className="text-black">Habitat</span> and founder
+            of <span className="text-black">Habitat Skills</span>, where I focus on AI-native
+            execution, M&amp;A-style thinking, and scaling early-stage ventures. Based in
+            Leuven, Belgium.
           </p>
         </div>
       </section>

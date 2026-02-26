@@ -9,8 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Can Erden — Founder & Director",
-  description: "Building tools and communities for the next generation of AI-native founders.",
+  title: "Can Erden — Habitat & Habitat Skills",
+  description:
+    "Founder of Habitat Skills and co-founder of Habitat, building tools and communities for the next generation of AI-native founders.",
 };
 
 export default function RootLayout({

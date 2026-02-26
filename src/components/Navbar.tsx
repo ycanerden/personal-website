@@ -37,6 +37,13 @@ export function Navbar() {
         <NavLink href="/">Home</NavLink>
         <NavLink href="/about">About</NavLink>
         <NavLink href="/blog">Blog</NavLink>
+        <Link
+          href="https://skills.joinhabitat.eu"
+          target="_blank"
+          className="ml-2 rounded-full border border-neutral-200 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-muted hover:text-black hover:border-black transition-colors"
+        >
+          Habitat Skills
+        </Link>
       </div>
     </nav>
   );

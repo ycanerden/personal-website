@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { getAllPostMetas, formatDate } from '@/lib/posts';
 import { PixelPhilosophyIcon } from '@/components/icons/PixelPhilosophyIcon';
 import { PixelBlogIcon } from '@/components/icons/PixelBlogIcon';
+import { PixelBetsIcon } from '@/components/icons/PixelBetsIcon';
 
 export default function Home() {
   const recentPosts = getAllPostMetas().slice(0, 3);
@@ -12,9 +13,36 @@ export default function Home() {
       <section className="mb-16">
         <h1 className="text-2xl font-bold mb-4 tracking-tight">Can Erden</h1>
         <p className="text-sm text-muted leading-relaxed">
-          Growth and strategy operator building AI-native tools for founders.
-          Based in Leuven, Belgium.
+          Growth and strategy operator working with AI-native founders.
+          Co-founder of Habitat and founder of Habitat Skills, based in Leuven,
+          Belgium.
         </p>
+      </section>
+
+      {/* Current focus */}
+      <section className="mb-20">
+        <h2 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-muted mb-4">
+          <PixelBetsIcon size={12} />
+          Current Focus
+        </h2>
+        <div className="text-sm text-muted leading-relaxed space-y-3">
+          <p>
+            I&apos;m building <span className="text-black">Habitat Skills</span>, an
+            AI-native operating system that helps founders work like directors
+            instead of solo executors.
+          </p>
+          <p>
+            It turns agents into strategic partners for thinking through markets,
+            drafting experiments, and shipping MVPs with far less overhead.
+          </p>
+          <Link
+            href="https://skills.joinhabitat.eu"
+            target="_blank"
+            className="inline-flex items-center text-xs font-bold uppercase tracking-[0.2em] text-muted hover:text-black transition-colors hover-link"
+          >
+            Learn more at Habitat Skills →
+          </Link>
+        </div>
       </section>
 
       {/* Philosophy */}
@@ -26,8 +54,14 @@ export default function Home() {
         <div className="text-sm text-muted leading-relaxed">
           <p>
             I believe the barrier between idea and execution is collapsing.
-            My work focuses on the &ldquo;Founder as Director&rdquo; model—leveraging agentic AI
-            to scale human strategy and automate the repetitive to focus on the unique.
+            My work focuses on the &ldquo;Founder as Director&rdquo; model—leveraging agentic
+            AI to scale human strategy and automate the repetitive so founders
+            can stay in high-leverage conversations and decisions.
+          </p>
+          <p className="mt-3">
+            Habitat and Habitat Skills are my experiments in this model: tools
+            and communities that compress the distance between a founder&apos;s
+            conviction and a version in the world.
           </p>
         </div>
       </section>

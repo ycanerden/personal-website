@@ -4,7 +4,8 @@ import { PixelBlogIcon } from '@/components/icons/PixelBlogIcon';
 
 export const metadata = {
   title: 'Writing — Can Erden',
-  description: 'Essays on AI-native founding, communities, and building in public.',
+  description:
+    'Essays on AI-native founding, communities, and building in public — drawn from building Habitat and Habitat Skills.',
 };
 
 export default function BlogPage() {
@@ -18,7 +19,8 @@ export default function BlogPage() {
           <h1 className="text-2xl font-bold tracking-tight">Writing</h1>
         </div>
         <p className="text-sm text-muted">
-          Essays on AI-native founding, communities, and building in public.
+          Essays on AI-native founding, communities, and building in public — often pulled
+          from what we&apos;re learning while building Habitat and Habitat Skills.
         </p>
       </div>
 

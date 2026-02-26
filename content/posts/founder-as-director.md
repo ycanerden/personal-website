@@ -40,3 +40,5 @@ Those questions were always the hard ones. They're just more visibly the hard on
 The best directors aren't just technically competent — they have a point of view. They know what the scene needs to feel like before they've shot it. The best AI-native founders are developing the same thing: a conviction about what they're building that survives the ambiguity of early-stage work.
 
 That's what I'm trying to build toward with Habitat and Habitat Skills — not just faster tools, but a way of working that makes founders more themselves, not less.
+
+If you want a structured way to practice this model, Habitat runs [community hackathons](https://www.joinhabitat.eu/) where founders ship MVPs together, and [Habitat Skills](https://skills.joinhabitat.eu) gives you the AI-native operating system to keep directing once the weekend is over. For more about how I think about this, you can also read the overview on my [about page](/about).

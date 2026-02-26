@@ -43,3 +43,5 @@ The obvious objection is that communities can become echo chambers. Everyone val
 This is real. A bad community is worse than no community. The work is building one where honesty is the norm — where someone saying "this doesn't make sense to me" is a gift, not an attack.
 
 We're still figuring out how to make that happen consistently at Habitat. But the answer isn't to opt out of community. It's to build better ones.
+
+If you&apos;re a founder who&apos;s been building alone and wants a sharper feedback loop, that&apos;s what we&apos;re trying to create with [Habitat&apos;s hackathons](https://www.joinhabitat.eu/). And if you want to keep that momentum between cohorts, [Habitat Skills](https://skills.joinhabitat.eu) is where I&apos;m putting everything I&apos;ve learned about turning agents into honest collaborators instead of silent tools. You can always find more context on how I work on the [about page](/about).
